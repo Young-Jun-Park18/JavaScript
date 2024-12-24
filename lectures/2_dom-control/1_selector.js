@@ -57,3 +57,22 @@ input.setAttribute("placeholder", "변경된 placeholder");
 
 // removeAttribute('속성이름')로 속성 지우기
 input.removeAttribute("placeholder");
+
+let hello = document.querySelector(".hello");
+console.log(hello);
+
+// style.color = 'color'로 html 요소 스타일링하기
+// hello.style.color = "blue";
+
+// style.backgroundColor = 'color'로 html 요소 스타일링하기
+// hello.style.backgroundColor = "white";
+
+// classList.add()로 js에서 html에 css 설정 추가
+hello.classList.add("dark");
+hello.classList.add("one", "two");
+
+// classList.remove()로 js에서 html에 css 설정 삭제
+hello.classList.remove("dark");
+
+// 다른 DOM 속성 공부하는 곳
+// https://developer.mozilla.org/en-US/docs/Web/API/Element
