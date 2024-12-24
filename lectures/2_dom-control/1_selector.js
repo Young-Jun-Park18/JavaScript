@@ -26,6 +26,9 @@ console.log("query item", item);
 let item2 = document.querySelectorAll(".item"); // 전부 가져옴
 console.log(item2);
 
+// query method로 태그 접근 방법
+let tag = document.querySelector("input");
+
 // 정리
 // DOM API = document object model api의 약자
 // HTML의 요소에 구조와 내용을 관리한다
@@ -41,3 +44,16 @@ console.log(item2);
 // 정리4
 // HTML 코드 수정하면 되는데 굳이 JS method 사용하는 이유
 // 사용자와 실시간 상호작용이 가능
+
+// textContent는 전부 문자로 인식
+title.textContent = "<strong>운동</strong>";
+
+// innerHTML은 태그 인식
+title.innerHTML = "<strong>@운동@</strong>";
+
+// setAttribute('속성이름', '바꿀 값')로 속성 변경하기
+let input = document.querySelector("input");
+input.setAttribute("placeholder", "변경된 placeholder");
+
+// removeAttribute('속성이름')로 속성 지우기
+input.removeAttribute("placeholder");
