@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>누르면 보이는 alert box</title>
+    <link rel="stylesheet" , href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <!-- UI 만드는 방법 -->
+  <!-- 1. 미리 디자인 해놓고 display = none; 으로 숨김 -->
+  <!-- 2. 어떤 상호작용을 했을 때 display = block; 으로 변경해줘서 보이게함 -->
+  <!-- 3. 이번 실습 뿐만아니라 모든 UI 는 이런 방식으로 만든다. (서브메뉴, 툴팁, 가이드바 등등) -->
+  <body>
+    
+    <div class="alert-box"> Alert box
+      <button onclick="document.getElementsByClassName('alert-box')[0].style.display = 'none';">
+        닫기
+      </button>
+    </div>
+
+    <!-- 모든 태그에 onclick = "javascript" 를 작성할 수 있는데, 클릭하면 안에 자바스크립트를 실행해줘 라는 명령어이다.-->
+    <button
+      onclick="document.getElementsByClassName('alert-box')[0].style.display = 'block';">
+      열기
+    </button>
+  </body>
+</html>

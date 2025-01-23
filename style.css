@@ -1,0 +1,9 @@
+.alert-box {
+  /*색상은 마우스를 올려두면 팔레트가 열림*/
+  background-color: rgb(114, 236, 155);
+  color: rgb(86, 86, 160);
+  border-radius: 5px;
+  padding: 20px;
+  /*display: none을 통해 평소에는 숨겨놓을 수 있음*/
+  display: none;
+}
