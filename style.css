@@ -1,0 +1,26 @@
+/* 숙제 1번 방법 */
+.alertBox1{
+  background-color: rgb(158, 128, 240);
+  color: rgb(98, 9, 133);
+  padding: 20px;
+  border-radius: 5px;
+  display: none;
+}
+
+.alertBox2{
+  background-color: rgb(158, 128, 240);
+  color: rgb(98, 9, 133);
+  padding: 20px;
+  border-radius: 5px;
+  display: none;
+}
+
+
+/* 숙제 2번 방법 */
+.alert-box{
+  background-color: rgb(158, 128, 240);
+  color: rgb(98, 9, 133);
+  padding: 20px;
+  border-radius: 5px;
+  display: none;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel = "stylesheet" href = "style.css">
+  <script src = "main.js" defer></script>
+</head>
+
+<body>
+    <!------------------------------숙제 1번 방법--------------------------------------------------->
+  <p><strong>숙제 1번 방법</strong></p>
+  <div class="alertBox1">아이디를 입력안하셨어요
+    <button onclick = "button_open_close1('none')">닫기1</button>
+  </div>
+  <button onclick = "button_open_close1('block')">열기1</button>
+
+  <div class="alertBox2">비번을 입력안하셨어요
+    <button onclick = "button_open_close2('none')">닫기2</button>
+  </div>
+  <button onclick = "button_open_close2('block')">열기2</button>
+
+  <!------------------------------숙제 2번 방법--------------------------------------------------->
+  <p><strong>숙제 2번 방법</strong></p>
+  <div class="alert-box" id="alert">
+    <p id = "title">Alert 박스</p>
+    <button>닫기</button>
+  </div>
+  <button onclick = "asd('아이디를 입력안하셨어요')">버튼1</button>
+  <button onclick = "asd('비번을 입력안하셨어요')">버튼2</button>
+
+</body>
+</html>
