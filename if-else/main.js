@@ -1,26 +1,43 @@
-/* Navbar */
-// 쿼리 셀렉터는 기본적으로 가장 위 1개만 찾아주기 때문에 중복 class명이 있다면 All과 [index]를 붙여서 지정해줘야한다
-// document.querySelectorAll('.navbar-toggler')[1]
-document.querySelector('.navbar-toggler').addEventListener('click', function(){
-  document.querySelector('.list-group').classList.toggle('show');
-}) //classList.toggle('show')는 해당 클래스에 show가 없으면 추가하고 있으면 제거하는 기능이다.
 
-/* 모달창 */
-document.querySelector('.btn-login').addEventListener('click', function(){
-  document.querySelector('.black-bg').classList.toggle('show');
-  document.querySelector('.white-bg').classList.toggle('show');
-})
-
-// 닫기 클릭 시 토클 활성화
-document.getElementById('close').addEventListener('click', function(){
-  document.querySelector('.black-bg').classList.toggle('show');
-  document.querySelector('.white-bg').classList.toggle('show');
-})
-
-/*전송버튼 눌렀을 때 input에 입력값이 공백이면 alert 띄워주는 것*/
-document.querySelector('.btn-primary').addEventListener('click', function(){
-  const input = document.querySelector('.form-control');
-  if(input.value === ''){
-    alert('아이디를 입력해주세요');
+//3 6 9 게임
+function game369(num){
+  const input = document.querySelector('.select');
+  if(num % 3 == 0){
+    console.log('박수');
   }
-})
+  else{
+    console.log('통과');
+  }
+}
+game369(3);
+game369(5);
+
+
+// 9의 배수에서는 박수 x 2 가 출력되도록
+function 삼육구게임(num){
+  if (num % 9 == 0) {
+    console.log("박수x2");
+  } else if (num % 3 == 0){
+    console.log('박수');
+  } else {
+    console.log('통과');
+  }
+}
+game369(3);
+game369(9);
+game369(11);
+
+// 공인중개사 합격 여부
+function eduwill(score1, score2){
+  if((score1 < 40 ) || (score2 < 40 )){
+    console.log('불합격');
+  } else if (score1 + score2 >= 120){
+    console.log('합격');
+  } else {
+    console.log('불합격');
+  }
+}
+
+eduwill(70, 70);
+eduwill(30, 100);
+eduwill(50, 50);
